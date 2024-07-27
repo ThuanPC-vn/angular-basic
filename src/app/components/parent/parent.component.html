@@ -1,0 +1,7 @@
+<button (click)="updateUser()">Update</button>
+Here is the user name's Parent: {{ userNameParent }}
+
+<br>
+<br>
+
+<app-child [userNameChild]="userNameParent" (opNameChild)="childUserChange($event)"></app-child>
